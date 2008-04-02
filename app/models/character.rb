@@ -4,6 +4,7 @@ class Character < ActiveRecord::Base
   belongs_to :race
   belongs_to :gender
   belongs_to :klass
+  belongs_to :faction
   
   [Gender, Race, Klass].each do |c|
     c.find(:all).each do |g|
