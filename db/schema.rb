@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20080402054830) do
   end
 
   create_table "genders", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,11 +37,13 @@ ActiveRecord::Schema.define(:version => 20080402054830) do
   end
 
   create_table "klasses", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "races", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
