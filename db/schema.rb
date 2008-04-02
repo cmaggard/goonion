@@ -9,12 +9,38 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080402045701) do
+ActiveRecord::Schema.define(:version => 20080402054830) do
+
+  create_table "characters", :force => true do |t|
+    t.string   "name"
+    t.integer  "guild_id"
+    t.integer  "server_id"
+    t.integer  "race_id"
+    t.integer  "gender_id"
+    t.integer  "klass_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "genders", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "guilds", :force => true do |t|
     t.string   "name"
     t.string   "name_sane"
     t.integer  "server_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "klasses", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "races", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
