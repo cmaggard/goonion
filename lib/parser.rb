@@ -63,11 +63,11 @@ class Parser
       char.save
       
     rescue OpenURI::HTTPError => e
-      print "HTTP Error."
+      print "E"
       sleep 1.0
       retry
     rescue Timeout::Error => e
-      print "Timeout"
+      print "T"
       sleep 1.0
       retry
     rescue Exception => e
