@@ -64,11 +64,12 @@ class Parser
       
     rescue OpenURI::HTTPError => e
       print "HTTP Error."
-      sleep 5.0
+      sleep 1.0
       retry
     rescue Timeout::Error => e
       print "Timeout"
-      sleep 3.0
+      sleep 1.0
+      retry
     rescue Exception => e
       raise e
     end
