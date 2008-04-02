@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <characterInfo>
+    <character battleGroup="Stormstrike" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Goon Squad" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" lastModified="March 31, 2008" level="70" name="Hearthattack" prefix="" race="Blood Elf" raceId="10" realm="Mal'Ganis" suffix=", Champion of the Naaru">
+      <arenaTeams>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="5" lastSeasonRanking="0" name="Ownd by Nubs" ranking="1133" rating="1863" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=Ownd+by+Nubs" seasonGamesPlayed="323" seasonGamesWon="174" size="2" url="r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;select=Ownd+by+Nubs">
+          <emblem background="ff000000" borderColor="ffff1300" borderStyle="4" iconColor="fffff400" iconStyle="88"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Kurodasdruid" class="Druid" classId="11" contribution="1907" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Kurodasdruid" race="Tauren" raceId="6" seasonGamesPlayed="279" seasonGamesWon="152" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Loctonde" class="Warlock" classId="9" contribution="1933" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Loctonde" race="Undead" raceId="5" seasonGamesPlayed="199" seasonGamesWon="114" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Zenda" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Zenda" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="3" lastSeasonRanking="0" name="worstgoons" ranking="7911" rating="1414" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=worstgoons" seasonGamesPlayed="132" seasonGamesWon="61" size="5" url="r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;select=worstgoons">
+          <emblem background="ff211d1e" borderColor="ff2b2b2e" borderStyle="6" iconColor="ff000003" iconStyle="50"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Dohtor" class="Shaman" classId="7" contribution="1416" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Dohtor" race="Tauren" raceId="6" seasonGamesPlayed="131" seasonGamesWon="61" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Oom" class="Druid" classId="11" contribution="1473" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Oom" race="Tauren" raceId="6" seasonGamesPlayed="35" seasonGamesWon="18" teamRank="1"/>
+
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Philman" class="Warrior" classId="1" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Philman" race="Orc" raceId="2" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Vauljin" class="Mage" classId="8" contribution="1429" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Vauljin" race="Troll" raceId="8" seasonGamesPlayed="10" seasonGamesWon="3" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Blitztod" class="Shaman" classId="7" contribution="1448" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Blitztod" race="Orc" raceId="2" seasonGamesPlayed="17" seasonGamesWon="8" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Pnice" class="Paladin" classId="2" contribution="1480" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Pnice" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="1" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Nuklive" class="Hunter" classId="3" contribution="1518" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Nuklive" race="Tauren" raceId="6" seasonGamesPlayed="10" seasonGamesWon="7" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Istanbullu" class="Warrior" classId="1" contribution="1489" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Istanbullu" race="Tauren" raceId="6" seasonGamesPlayed="20" seasonGamesWon="12" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Grillparts" class="Priest" classId="5" contribution="1483" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Grillparts" race="Undead" raceId="5" seasonGamesPlayed="76" seasonGamesWon="37" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+          </members>
+
+        </arenaTeam>
+      </arenaTeams>
+    </character>
+    <characterTab>
+      <talentSpec treeOne="5" treeThree="48" treeTwo="8"/>
+      <buffs>
+        <spell effect="Mounted speed increased by 20%.  This does not stack with other movement speed increasing effects." icon="spell_holy_crusaderaura" name="Crusader Aura"/>
+      </buffs>
+      <debuffs/>
+
+      <pvp>
+        <lifetimehonorablekills value="3238"/>
+        <arenacurrency value="986"/>
+      </pvp>
+      <professions>
+        <skill key="engineering" max="375" name="Engineering" value="375"/>
+        <skill key="mining" max="375" name="Mining" value="375"/>
+      </professions>
+      <title value="%s, Champion of the Naaru"/>
+
+      <knownTitles>
+        <title value="%s, Champion of the Naaru"/>
+      </knownTitles>
+      <characterBars>
+        <health effective="8577"/>
+        <secondBar casting="0" effective="5613" notCasting="61" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="1278" base="135" block="32" effective="649"/>
+
+        <agility armor="478" attack="-1" base="79" critHitPercent="10.21" effective="239"/>
+        <stamina base="118" effective="538" health="5200" petBonus="-1"/>
+        <intellect base="87" critHitPercent="5.79" effective="196" mana="2660" petBonus="-1"/>
+        <spirit base="88" effective="94" healthRegen="18" manaRegen="61"/>
+        <armor base="9943" effective="9943" percent="48.50" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="5"/>
+        <fire petBonus="-1" value="5"/>
+
+        <frost petBonus="-1" value="5"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="5"/>
+        <shadow petBonus="-1" value="5"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="285.9" max="1130" min="927" percent="0" speed="3.60"/>
+        <offHandDamage dps="69.1" max="135" min="134" percent="0" speed="1.95"/>
+        <mainHandSpeed hastePercent="2.85" hasteRating="45" value="3.60"/>
+
+        <offHandSpeed hastePercent="2.85" hasteRating="45" value="1.95"/>
+        <power base="1488" effective="1874" increasedDps="133.0"/>
+        <hitRating increasedHitPercent="6.09" value="96"/>
+        <critChance percent="27.41" plusPercent="9.20" rating="203"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="-1"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+
+        <speed hastePercent="2.85" hasteRating="45" value="0.00"/>
+        <power base="229" effective="615" increasedDps="43.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="6.09" value="96"/>
+        <critChance percent="22.09" plusPercent="9.20" rating="203"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="0.00" value="0"/>
+        <critChance rating="0">
+
+          <arcane percent="8.79"/>
+          <fire percent="8.79"/>
+          <frost percent="8.79"/>
+          <holy percent="8.79"/>
+          <nature percent="8.79"/>
+          <shadow percent="8.79"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="61.00"/>
+
+      </spell>
+      <defenses>
+        <armor base="9943" effective="9943" percent="48.50" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="350.00"/>
+        <dodge increasePercent="0.00" percent="10.21" rating="0"/>
+        <parry increasePercent="0.00" percent="5.00" rating="0"/>
+        <block increasePercent="0.00" percent="5.00" rating="0"/>
+        <resilience damagePercent="3.75" hitPercent="1.88" value="74.00"/>
+      </defenses>
+
+      <items>
+        <item durability="100" gem0Id="32409" gem1Id="24054" gem2Id="0" icon="inv_gizmo_newgoggles" id="32461" maxDurability="100" permanentenchant="3096" randomPropertiesId="0" seed="508863637" slot="0"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_06" id="28745" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1367773049" slot="1"/>
+        <item durability="100" gem0Id="24027" gem1Id="35487" gem2Id="0" icon="inv_shoulder_14" id="29075" maxDurability="100" permanentenchant="2997" randomPropertiesId="0" seed="0" slot="2"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_black_01" id="4336" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="976223264" slot="3"/>
+        <item durability="165" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate11" id="30102" maxDurability="165" permanentenchant="2661" randomPropertiesId="0" seed="723745208" slot="4"/>
+        <item durability="55" gem0Id="24067" gem1Id="24058" gem2Id="0" icon="inv_belt_13" id="30032" maxDurability="55" permanentenchant="0" randomPropertiesId="0" seed="2040154138" slot="5"/>
+        <item durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_15" id="29074" maxDurability="120" permanentenchant="3010" randomPropertiesId="0" seed="0" slot="6"/>
+        <item durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_04" id="33911" maxDurability="75" permanentenchant="2657" randomPropertiesId="0" seed="0" slot="7"/>
+
+        <item durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_07" id="23537" maxDurability="55" permanentenchant="2647" randomPropertiesId="0" seed="114758788" slot="8"/>
+        <item durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_60" id="33750" maxDurability="55" permanentenchant="684" randomPropertiesId="0" seed="0" slot="9"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="33919" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="0" slot="10"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_48naxxramas" id="29177" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="0" slot="11"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_enggizmos_07" id="30542" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="397066628" slot="12"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_monsterscales_15" id="29383" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="0" slot="13"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_17" id="28764" maxDurability="0" permanentenchant="368" randomPropertiesId="0" seed="1583099737" slot="14"/>
+        <item durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_108" id="33478" maxDurability="120" permanentenchant="2673" randomPropertiesId="0" seed="0" slot="15"/>
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_stonetablet_05" id="27484" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1293876641" slot="17"/>
+
+        <item durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="25549" maxDurability="0" permanentenchant="0" randomPropertiesId="0" seed="1072152970" slot="18"/>
+      </items>
+    </characterTab>
+  </characterInfo>
+</page>

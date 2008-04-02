@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
+  <characterInfo>
+    <character battleGroup="Stormstrike" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Goon Squad" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" lastModified="March 31, 2008" level="70" name="Hearthattack" prefix="" race="Blood Elf" raceId="10" realm="Mal'Ganis" suffix=", Champion of the Naaru">
+      <arenaTeams>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="5" lastSeasonRanking="0" name="Ownd by Nubs" ranking="1133" rating="1863" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=Ownd+by+Nubs" seasonGamesPlayed="323" seasonGamesWon="174" size="2" url="r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;select=Ownd+by+Nubs">
+          <emblem background="ff000000" borderColor="ffff1300" borderStyle="4" iconColor="fffff400" iconStyle="88"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Kurodasdruid" class="Druid" classId="11" contribution="1907" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Kurodasdruid" race="Tauren" raceId="6" seasonGamesPlayed="279" seasonGamesWon="152" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Loctonde" class="Warlock" classId="9" contribution="1933" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Loctonde" race="Undead" raceId="5" seasonGamesPlayed="199" seasonGamesWon="114" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Zenda" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Zenda" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="3" lastSeasonRanking="0" name="worstgoons" ranking="7911" rating="1414" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=worstgoons" seasonGamesPlayed="132" seasonGamesWon="61" size="5" url="r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;select=worstgoons">
+          <emblem background="ff211d1e" borderColor="ff2b2b2e" borderStyle="6" iconColor="ff000003" iconStyle="50"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Dohtor" class="Shaman" classId="7" contribution="1416" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Dohtor" race="Tauren" raceId="6" seasonGamesPlayed="131" seasonGamesWon="61" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Oom" class="Druid" classId="11" contribution="1473" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Oom" race="Tauren" raceId="6" seasonGamesPlayed="35" seasonGamesWon="18" teamRank="1"/>
+
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Philman" class="Warrior" classId="1" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Philman" race="Orc" raceId="2" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Vauljin" class="Mage" classId="8" contribution="1429" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Vauljin" race="Troll" raceId="8" seasonGamesPlayed="10" seasonGamesWon="3" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Blitztod" class="Shaman" classId="7" contribution="1448" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Blitztod" race="Orc" raceId="2" seasonGamesPlayed="17" seasonGamesWon="8" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Pnice" class="Paladin" classId="2" contribution="1480" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Pnice" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="1" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Nuklive" class="Hunter" classId="3" contribution="1518" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Nuklive" race="Tauren" raceId="6" seasonGamesPlayed="10" seasonGamesWon="7" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Istanbullu" class="Warrior" classId="1" contribution="1489" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Istanbullu" race="Tauren" raceId="6" seasonGamesPlayed="20" seasonGamesWon="12" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Grillparts" class="Priest" classId="5" contribution="1483" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Grillparts" race="Undead" raceId="5" seasonGamesPlayed="76" seasonGamesWon="37" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+          </members>
+
+        </arenaTeam>
+      </arenaTeams>
+    </character>
+    <reputationTab>
+      <factionCategory key="horde" name="Horde">
+        <faction key="darkspeartrolls" name="Darkspear Trolls" reputation="32941"/>
+        <faction key="orgrimmar" name="Orgrimmar" reputation="39511"/>
+        <faction key="silvermooncity" name="Silvermoon City" reputation="42375"/>
+        <faction key="thunderbluff" name="Thunder Bluff" reputation="32395"/>
+
+        <faction key="undercity" name="Undercity" reputation="42477"/>
+      </factionCategory>
+      <factionCategory key="hordeforces" name="Horde Forces">
+        <faction key="frostwolfclan" name="Frostwolf Clan" reputation="22111"/>
+        <faction key="thedefilers" name="The Defilers" reputation="860"/>
+        <faction key="warsongoutriders" name="Warsong Outriders" reputation="780"/>
+      </factionCategory>
+      <factionCategory key="outland" name="Outland">
+        <faction key="ashtonguedeathsworn" name="Ashtongue Deathsworn" reputation="4036"/>
+
+        <faction key="cenarionexpedition" name="Cenarion Expedition" reputation="42999"/>
+        <faction key="netherwing" name="Netherwing" reputation="42999"/>
+        <faction key="ogri'la" name="Ogri'la" reputation="32045"/>
+        <faction key="sporeggar" name="Sporeggar" reputation="10169"/>
+        <faction key="theconsortium" name="The Consortium" reputation="23719"/>
+        <faction key="themag'har" name="The Mag'har" reputation="23492"/>
+        <faction key="thrallmar" name="Thrallmar" reputation="42534"/>
+      </factionCategory>
+      <factionCategory key="shattrathcity" name="Shattrath City">
+
+        <faction key="lowercity" name="Lower City" reputation="28236"/>
+        <faction key="sha'tariskyguard" name="Sha'tari Skyguard" reputation="42999"/>
+        <faction key="shatteredsunoffensive" name="Shattered Sun Offensive" reputation="16115"/>
+        <faction key="thealdor" name="The Aldor" reputation="-42000"/>
+        <faction key="thescryers" name="The Scryers" reputation="42999"/>
+        <faction key="thesha'tar" name="The Sha'tar" reputation="42999"/>
+      </factionCategory>
+      <factionCategory key="steamwheedlecartel" name="Steamwheedle Cartel">
+        <faction key="bootybay" name="Booty Bay" reputation="14010"/>
+
+        <faction key="everlook" name="Everlook" reputation="11156"/>
+        <faction key="gadgetzan" name="Gadgetzan" reputation="13476"/>
+        <faction key="ratchet" name="Ratchet" reputation="11481"/>
+      </factionCategory>
+      <factionCategory key="zother" name="Other">
+        <faction key="argentdawn" name="Argent Dawn" reputation="16092"/>
+        <faction key="bloodsailbuccaneers" name="Bloodsail Buccaneers" reputation="-16175"/>
+        <faction key="cenarioncircle" name="Cenarion Circle" reputation="1228"/>
+        <faction key="darkmoonfaire" name="Darkmoon Faire" reputation="850"/>
+
+        <faction key="hydraxianwaterlords" name="Hydraxian Waterlords" reputation="2053"/>
+        <faction key="keepersoftime" name="Keepers of Time" reputation="24435"/>
+        <faction key="shen'dralar" name="Shen'dralar" reputation="0"/>
+        <faction key="thescaleofthesands" name="The Scale of the Sands" reputation="0"/>
+        <faction key="thevioleteye" name="The Violet Eye" reputation="42999"/>
+        <faction key="thoriumbrotherhood" name="Thorium Brotherhood" reputation="1000"/>
+        <faction key="timbermawhold" name="Timbermaw Hold" reputation="-2588"/>
+        <faction key="tranquillien" name="Tranquillien" reputation="42999"/>
+        <faction key="zandalartribe" name="Zandalar Tribe" reputation="0"/>
+
+      </factionCategory>
+    </reputationTab>
+  </characterInfo>
+</page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/layout/guild-info.xsl"?>
+<page globalSearch="1" lang="en_us" requestUrl="/guild-info.xml">
+  <guildKey factionId="1" name="Goon Squad" nameUrl="Goon+Squad" realm="Mal'Ganis" realmUrl="Mal%27Ganis" url="r=Mal%27Ganis&amp;n=Goon+Squad"/>
+  <guildInfo>
+    <guild>
+      <members memberCount="1440">
+        <character cId="3" gId="1" n="Krahskrej" rId="10" url="r=Mal%27Ganis&amp;n=Krahskrej"/>
+        ...
+        <character cId="9" gId="1" n="Levelfifteen" rId="10" url="r=Mal%27Ganis&amp;n=Levelfifteen"/>
+      </members>
+    </guild>
+  </guildInfo>
+</page>
