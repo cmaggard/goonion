@@ -47,7 +47,7 @@ class Parser
     begin
       char = Character.find_or_create_by_name(c)
       
-      return if char.updated_at < 1.day.ago
+      return if char.updated_at > 1.day.ago
       
       xml = Hpricot.XML(open(URI.escape(CHARACTER_SHEET_URL % [realm, c]), REQUEST_HASH))
 
