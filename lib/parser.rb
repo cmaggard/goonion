@@ -3,6 +3,8 @@ require 'hpricot'
 require 'open-uri'
 
 module Goonion
+  class NoSuchGuildError < Exception; end
+  
   class Parser
     GUILD_ROSTER_URL = "http://armory.worldofwarcraft.com/guild-info.xml?brief=1&r=%s&n=%s"
     CHARACTER_SHEET_URL = "http://armory.worldofwarcraft.com/character-sheet.xml?r=%s&n=%s"
@@ -17,28 +19,28 @@ module Goonion
     end
 
     def parse!
-      characters = retrieve_guild_names
-      puts "Guild names retrieved.  Count: #{characters.length}"
-      
+      begin
+        characters = retrieve_guild_names
+        Rails.logger.debug "Guild names retrieved.  Count: #{characters.length}"
+      rescue Exception => e
+        raise e
+      end
     end
     
     protected
     
+
     def retrieve_guild_names
       roster = Hpricot.XML(open(GUILD_ROSTER_URL % [realm, guild], REQUEST_HASH))
+      begin
+        memberlist = (roster % :page % :guildInfo % :guild % :members)
       
-      memberlist = (roster % :page % :guildInfo % :guild % :members)
-      
-      (memberlist / :character).inject([]) do |k,v|
-        k << v[:n]
-      end
-      
-      
-      # open("log/roster.xml","w") do |f|
-      #   roster.each_line do |l|
-      #     f << l
-      #   end
-      # end
+        (memberlist / :character).inject([]) do |k,v|
+          k << v[:n]
+        end
+      rescue NoMethodError => e
+        raise NoSuchGuildError
+      end  
     end
   end
 end
