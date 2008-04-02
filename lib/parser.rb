@@ -18,6 +18,7 @@ class Parser
   def initialize(realm = "Mal'Ganis", guild = "Goon Squad")
     self.realm = realm
     self.guild = guild
+    self.guild_realm_set = false
   end
 
   def parse!
@@ -39,13 +40,13 @@ class Parser
   protected
   
   def retrieve_realm_and_guild_ids
-    self.realm_id = Server.find_or_create_by_name(self.realm)
-    self.guild_id = self.realm_id.guilds.find_or_create_by_name(self.guild)
+    self.realm_id = Server.find_or_create_by_name(realm)
+    self.guild_id = self.realm_id.guilds.find_or_create_by_name(guild)
   end
   
   def parse_character(c)
     begin
-      char = Character.find_or_create_by_name(c)
+      char = Server.find_by_name(realm_id.name).characters.find_or_create_by_name(c)
       
       return if char.updated_at > 1.day.ago
       
@@ -58,7 +59,14 @@ class Parser
       char.gender = Gender.find_by_name(character[:gender])
       char.race = Race.find_by_name(character[:race])
       char.klass = Klass.find_by_name(character[:class])
+      char.level = character[:level]
+      char.faction = Faction.find_by_name(character[:faction])
       
+      # Can't get guild faction from guild page; if Guild does not have faction set, 
+      unless guild_realm_set
+        char.guild.update_attribute(:faction, char.faction) 
+        guild_realm_set = false
+      end
       char.save
       
     rescue OpenURI::HTTPError => e
@@ -69,8 +77,6 @@ class Parser
       print "T"
       sleep 1.0
       retry
-    rescue Exception => e
-      raise e
     end
   end
 
