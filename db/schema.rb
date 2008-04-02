@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080402044241) do
+ActiveRecord::Schema.define(:version => 20080402045701) do
+
+  create_table "guilds", :force => true do |t|
+    t.string   "name"
+    t.string   "name_sane"
+    t.integer  "server_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "servers", :force => true do |t|
     t.string   "name"
