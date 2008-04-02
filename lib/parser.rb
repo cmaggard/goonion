@@ -49,7 +49,6 @@ class Parser
       
       return if char.updated_at < 1.day.ago
       
-      puts URI.escape(CHARACTER_SHEET_URL % [realm, c])
       xml = Hpricot.XML(open(URI.escape(CHARACTER_SHEET_URL % [realm, c]), REQUEST_HASH))
 
       char.guild = self.guild_id
