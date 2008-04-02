@@ -5,8 +5,10 @@ require 'open-uri'
 module Goonion
   class Parser
     GUILD_ROSTER_URL = "http://armory.worldofwarcraft.com/guild-info.xml?brief=1&r=%s&n=%s"
+    CHARACTER_SHEET_URL = "http://armory.worldofwarcraft.com/character-sheet.xml?r=%s&n=%s"
+    CHARACTER_REP_URL = "http://armory.worldofwarcraft.com/character-reputation.xml?r=%s&n=%s"
     REQUEST_HASH = { "user-agent" =>
-                      "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4"}
+                      "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4" }
     
     attr_accessor :realm, :guild, :debug
     def initialize(realm = "Mal'Ganis", guild = "Goon Squad")
@@ -16,6 +18,8 @@ module Goonion
 
     def parse!
       characters = retrieve_guild_names
+      puts "Guild names retrieved.  Count: #{characters.length}"
+      
     end
     
     protected
