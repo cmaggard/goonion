@@ -15,5 +15,6 @@ class Character < ActiveRecord::Base
   end
   
   named_scope :level, lambda { |l| { :conditions => ["level = ?", l] } }
-  
+  named_scope :min_level, lambda { |l| { :conditions => ["level > ?", l] } }
+  named_scope :max_level, lambda { |l| { :conditions => ["level < ?", l] } }  
 end
