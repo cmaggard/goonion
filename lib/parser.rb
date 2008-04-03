@@ -70,6 +70,8 @@ class Parser
         guild_realm_set = false
       end
       char.save
+      # Increase to 2.0 or 3.0 if seeing more errors
+      sleep 1.0
       
     rescue OpenURI::HTTPError => e
       print "E"
