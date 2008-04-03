@@ -56,13 +56,20 @@ class Parser
 
       char.guild = self.guild_id
       char.server = self.realm_id
-      
-      character = (xml % :page % :characterInfo % :character)
+
+      characterInfo = (xml % :page % characterInfo)      
+      character = (characterInfo % :character)
       char.gender = Gender.find_by_name(character[:gender])
       char.race = Race.find_by_name(character[:race])
       char.klass = Klass.find_by_name(character[:class])
       char.level = character[:level]
       char.faction = Faction.find_by_name(character[:faction])
+      
+      professions = (characterInfo % :characterTab % professions)
+      
+      (professions / :skill).each do |p|
+        
+      end
       
       # Can't get guild faction from guild page; if Guild does not have faction set, 
       unless guild_realm_set
