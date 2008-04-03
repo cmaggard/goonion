@@ -14,7 +14,7 @@ class Parser
                     "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4",
                    "connection" => "close"}
   
-  attr_accessor :realm_url, :guild_url, :realm, :guild, :realm_id, :guild_id
+  attr_accessor :realm_url, :guild_url, :realm, :guild, :realm_id, :guild_id, :guild_realm_set
   def initialize(realm = "Mal'Ganis", guild = "Goon Squad")
     self.realm = realm
     self.guild = guild
@@ -48,7 +48,9 @@ class Parser
     begin
       char = Server.find_by_name(realm_id.name).characters.find_or_create_by_name(c)
       
-      return if char.updated_at > 1.day.ago
+      unless char.created_at == char.updated_at
+        return if char.updated_at > 1.day.ago
+      end
       
       xml = Hpricot.XML(open(URI.escape(CHARACTER_SHEET_URL % [realm, c]), REQUEST_HASH))
 
@@ -71,11 +73,11 @@ class Parser
       
     rescue OpenURI::HTTPError => e
       print "E"
-      sleep 1.0
+      sleep 5.0
       retry
     rescue Timeout::Error => e
       print "T"
-      sleep 1.0
+      sleep 5.0
       retry
     end
   end
