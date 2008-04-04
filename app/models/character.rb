@@ -14,6 +14,13 @@ class Character < ActiveRecord::Base
     end
   end
   
+  [Guild, Server].each do |c|
+    named_scope c.name.downcase.to_sym,
+      lambda { |n| 
+        { :conditions => {c.to_s.downcase.pluralize + ".name" => n},
+          :include => c.to_s.downcase.to_sym } }
+  end
+  
   named_scope :level, lambda { |l| { :conditions => ["level = ?", l] } }
   named_scope :min_level, lambda { |l| { :conditions => ["level > ?", l] } }
   named_scope :max_level, lambda { |l| { :conditions => ["level < ?", l] } }  
