@@ -23,27 +23,19 @@ class Parser
 
   def parse!
     begin
-      characters = retrieve_guild_names
-      Rails.logger.debug "Guild names retrieved.  Count: #{characters.length}"
+      characters = retrieve_guild_members
+      Rails.logger.debug "Guild members retrieved.  Count: #{characters.length}"
       
       retrieve_realm_and_guild_ids
       
       characters.each do |c|
         parse_character(c)
-        print "."
       end
     rescue Exception => e
       raise e
     end
   end
-  
-  protected
-  
-  def retrieve_realm_and_guild_ids
-    self.realm_id = Server.find_or_create_by_name(realm)
-    self.guild_id = self.realm_id.guilds.find_or_create_by_name(guild)
-  end
-  
+    
   def parse_character(c)
     begin
       char = Server.find_by_name(realm_id.name).characters.find_or_create_by_name(c)
@@ -64,12 +56,17 @@ class Parser
       char.klass = Klass.find_by_name(character[:class])
       char.level = character[:level]
       char.faction = Faction.find_by_name(character[:faction])
-      
+
+
+      ############################################################
+      # Factor this into own method once parsing skills page
       professions = (characterInfo % :characterTab % professions)
       
       (professions / :skill).each do |p|
-        
+
       end
+      ############################################################
+
       
       # Can't get guild faction from guild page; if Guild does not have faction set, 
       unless guild_realm_set
@@ -81,17 +78,15 @@ class Parser
       sleep 1.0
       
     rescue OpenURI::HTTPError => e
-      print "E"
       sleep 5.0
       retry
     rescue Timeout::Error => e
-      print "T"
       sleep 5.0
       retry
     end
   end
 
-  def retrieve_guild_names
+  def retrieve_guild_members
     roster = Hpricot.XML(open(URI.escape(GUILD_ROSTER_URL % [realm, guild]), REQUEST_HASH))
     begin
       memberlist = (roster % :page % :guildInfo % :guild % :members)
@@ -103,4 +98,12 @@ class Parser
       raise NoSuchGuildError
     end  
   end
+  
+  protected 
+  
+  def retrieve_realm_and_guild_ids
+    self.realm_id = Server.find_or_create_by_name(realm)
+    self.guild_id = self.realm_id.guilds.find_or_create_by_name(guild)
+  end
+  
 end
