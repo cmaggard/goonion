@@ -1,0 +1,3 @@
+class Profession < Skill
+    
+end
