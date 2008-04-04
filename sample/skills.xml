@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/layout/character-skills.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-skills.xml">
+  <characterInfo>
+    <character battleGroup="Stormstrike" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Goon Squad" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" lastModified="April 4, 2008" level="70" name="Hearthattack" prefix="" race="Blood Elf" raceId="10" realm="Mal'Ganis" suffix=", Champion of the Naaru">
+      <arenaTeams>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="5" lastSeasonRanking="0" name="Ownd by Nubs" ranking="1133" rating="1863" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=Ownd+by+Nubs" seasonGamesPlayed="323" seasonGamesWon="174" size="2" url="r=Mal%27Ganis&amp;ts=2&amp;t=Ownd+by+Nubs&amp;select=Ownd+by+Nubs">
+          <emblem background="ff000000" borderColor="ffff1300" borderStyle="4" iconColor="fffff400" iconStyle="88"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Kurodasdruid" class="Druid" classId="11" contribution="1907" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Kurodasdruid" race="Tauren" raceId="6" seasonGamesPlayed="279" seasonGamesWon="152" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Loctonde" class="Warlock" classId="9" contribution="1933" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Loctonde" race="Undead" raceId="5" seasonGamesPlayed="199" seasonGamesWon="114" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Zenda" class="Paladin" classId="2" contribution="1493" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Zenda" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+        <arenaTeam battleGroup="Stormstrike" faction="Horde" factionId="1" gamesPlayed="10" gamesWon="3" lastSeasonRanking="0" name="worstgoons" ranking="7911" rating="1414" realm="Mal'Ganis" realmUrl="b=Stormstrike&amp;r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;ff=realm&amp;fv=Mal%27Ganis&amp;select=worstgoons" seasonGamesPlayed="132" seasonGamesWon="61" size="5" url="r=Mal%27Ganis&amp;ts=5&amp;t=worstgoons&amp;select=worstgoons">
+          <emblem background="ff211d1e" borderColor="ff2b2b2e" borderStyle="6" iconColor="ff000003" iconStyle="50"/>
+          <members>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Dohtor" class="Shaman" classId="7" contribution="1416" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Dohtor" race="Tauren" raceId="6" seasonGamesPlayed="131" seasonGamesWon="61" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Oom" class="Druid" classId="11" contribution="1473" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Oom" race="Tauren" raceId="6" seasonGamesPlayed="35" seasonGamesWon="18" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Philman" class="Warrior" classId="1" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Philman" race="Orc" raceId="2" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Vauljin" class="Mage" classId="8" contribution="1429" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Vauljin" race="Troll" raceId="8" seasonGamesPlayed="10" seasonGamesWon="3" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Blitztod" class="Shaman" classId="7" contribution="1448" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Blitztod" race="Orc" raceId="2" seasonGamesPlayed="17" seasonGamesWon="8" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Pnice" class="Paladin" classId="2" contribution="1480" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Pnice" race="Blood Elf" raceId="10" seasonGamesPlayed="3" seasonGamesWon="1" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Nuklive" class="Hunter" classId="3" contribution="1518" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Nuklive" race="Tauren" raceId="6" seasonGamesPlayed="10" seasonGamesWon="7" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Istanbullu" class="Warrior" classId="1" contribution="1489" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Istanbullu" race="Tauren" raceId="6" seasonGamesPlayed="20" seasonGamesWon="12" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Grillparts" class="Priest" classId="5" contribution="1483" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Grillparts" race="Undead" raceId="5" seasonGamesPlayed="76" seasonGamesWon="37" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Mal%27Ganis&amp;n=Hearthattack" class="Paladin" classId="2" contribution="1438" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Goon Squad" guildId="500888" guildUrl="r=Mal%27Ganis&amp;n=Goon+Squad&amp;p=1" name="Hearthattack" race="Blood Elf" raceId="10" seasonGamesPlayed="20" seasonGamesWon="9" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+    </character>
+    <skillTab>
+      <skillCategory key="professions" name="Professions">
+        <skill key="engineering" max="375" name="Engineering" value="375"/>
+        <skill key="mining" max="375" name="Mining" value="375"/>
+      </skillCategory>
+      <skillCategory key="secondaryskills" name="Secondary Skills">
+        <skill key="cooking" max="375" name="Cooking" value="375"/>
+        <skill key="firstaid" max="375" name="First Aid" value="375"/>
+        <skill key="fishing" max="375" name="Fishing" value="375"/>
+        <skill key="riding" max="300" name="Riding" value="300"/>
+      </skillCategory>
+      <skillCategory key="weaponskills" name="Weapon Skills">
+        <skill key="axes" max="350" name="Axes" value="347"/>
+        <skill key="defense" max="350" name="Defense" value="350"/>
+        <skill key="maces" max="350" name="Maces" value="350"/>
+        <skill key="polearms" max="350" name="Polearms" value="325"/>
+        <skill key="swords" max="350" name="Swords" value="350"/>
+        <skill key="two-handedaxes" max="350" name="Two-Handed Axes" value="350"/>
+        <skill key="two-handedmaces" max="350" name="Two-Handed Maces" value="350"/>
+        <skill key="two-handedswords" max="350" name="Two-Handed Swords" value="350"/>
+        <skill key="unarmed" max="350" name="Unarmed" value="342"/>
+      </skillCategory>
+      <skillCategory key="classskills" name="Class Skills">
+        <skill key="holy" max="0" name="Holy" value="350"/>
+        <skill key="protection" max="0" name="Protection" value="350"/>
+        <skill key="retribution" max="0" name="Retribution" value="350"/>
+      </skillCategory>
+      <skillCategory key="armorproficiencies" name="Armor Proficiencies">
+        <skill key="cloth" max="0" name="Cloth" value="1"/>
+        <skill key="leather" max="0" name="Leather" value="1"/>
+        <skill key="mail" max="0" name="Mail" value="1"/>
+        <skill key="platemail" max="0" name="Plate Mail" value="1"/>
+        <skill key="shield" max="0" name="Shield" value="1"/>
+      </skillCategory>
+      <skillCategory key="languages" name="Languages">
+        <skill key="language:orcish" max="300" name="Language: Orcish" value="300"/>
+        <skill key="language:thalassian" max="300" name="Language: Thalassian" value="300"/>
+      </skillCategory>
+    </skillTab>
+  </characterInfo>
+</page>
