@@ -49,7 +49,7 @@ class Parser
       char.guild = self.guild_id
       char.server = self.realm_id
 
-      characterInfo = (xml % :page % characterInfo)      
+      characterInfo = (xml % :page % :characterInfo)      
       character = (characterInfo % :character)
       char.gender = Gender.find_by_name(character[:gender])
       char.race = Race.find_by_name(character[:race])
@@ -60,11 +60,11 @@ class Parser
 
       ############################################################
       # Factor this into own method once parsing skills page
-      professions = (characterInfo % :characterTab % professions)
-      
-      (professions / :skill).each do |p|
-
-      end
+      # professions = (characterInfo % :characterTab % professions)
+      # 
+      # (professions / :skill).each do |p|
+      # 
+      # end
       ############################################################
 
       
