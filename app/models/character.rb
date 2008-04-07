@@ -7,7 +7,8 @@ class Character < ActiveRecord::Base
   belongs_to :faction
 
   has_many :skill_levels
-  has_many :professions, :through => :skill_levels
+  has_many :professions, :class_name => "Profession", :source => :skill, :through => :skill_levels
+  has_many :secondaries, :class_name => "Secondary", :source => :skill, :through => :skill_levels
   
   [Gender, Race, Klass, Faction].each do |c|
     c.find(:all).each do |g|
