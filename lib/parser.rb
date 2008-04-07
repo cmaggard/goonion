@@ -5,6 +5,8 @@ require 'uri'
 
 
 class NoSuchGuildError < Exception; end
+
+class InactiveCharacterError < Exception; end
   
 class Parser
   GUILD_ROSTER_URL = "http://www.wowarmory.com/guild-info.xml?brief=1&r=%s&n=%s"
@@ -47,7 +49,7 @@ class Parser
 
       char.server, char.guild = retrieve_server_and_guild_ids(server_name, guild_name)
 
-      characterInfo = (xml % :page % :characterInfo)      
+      characterInfo = (xml % :page % :characterInfo)
       character = (characterInfo % :character)
       char.gender = Gender.find_by_name(character[:gender])
       char.race = Race.find_by_name(character[:race])
@@ -75,6 +77,9 @@ class Parser
     rescue Timeout::Error => e
       sleep 5.0
       retry
+    rescue InactiveCharacterError => e
+      char.save
+      sleep 2.0
     end
   end
 
