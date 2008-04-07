@@ -5,6 +5,9 @@ class Character < ActiveRecord::Base
   belongs_to :gender
   belongs_to :klass
   belongs_to :faction
+
+  has_many :skill_levels
+  has_many :professions, :through => :skill_levels
   
   [Gender, Race, Klass, Faction].each do |c|
     c.find(:all).each do |g|
