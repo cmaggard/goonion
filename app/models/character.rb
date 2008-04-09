@@ -20,12 +20,19 @@ class Character < ActiveRecord::Base
   
   [Guild, Server].each do |c|
     named_scope c.name.downcase.to_sym,
-      lambda { |n| 
-        { :conditions => {c.to_s.downcase.pluralize + ".name" => n},
-          :include => c.to_s.downcase.to_sym } }
+      lambda { |n| { :conditions => {c.to_s.downcase.pluralize + ".name" => n},
+                     :include => c.to_s.downcase.to_sym } }
   end
   
-  named_scope :level, lambda { |l| { :conditions => ["level = ?", l] } }
-  named_scope :min_level, lambda { |l| { :conditions => ["level >= ?", l] } }
-  named_scope :max_level, lambda { |l| { :conditions => ["level <= ?", l] } }  
+  ["level"].each do |c|
+    { "" => "=", "min_" => ">=", "max_" => "<="}.each do |k, v|
+      named_scope( (k+c).to_sym,
+        lambda { |l| { :conditions => [[c,v].join(" ") + " ?", l] } })
+    end
+  end
+  
+  def add_skill(type,name,level)
+    klass = eval(type.gsub("skills","").singularize.capitalize)
+    skill = klass.send(:find_by_name, name)
+  end
 end
