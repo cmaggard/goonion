@@ -13,7 +13,7 @@ class Parser
   URL = { :guild => "#{BASE_URL}guild-info.xml?brief=1&r=%s&n=%s",
           :character => "#{BASE_URL}character-sheet.xml?r=%s&n=%s",
           :reputation => "#{BASE_URL}character-reputation.xml?r=%s&n=%s",
-          :skills => "#{BASE_URL}character-skills.xml?r=%s&n=%s"
+          :skills => "#{BASE_URL}character-skills.xml?r=%s&n=%s" }
   REQUEST_HASH = { "user-agent" =>
                     "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4",
                    "connection" => "close"}
@@ -25,7 +25,6 @@ class Parser
     
       characters.each do |c|
         parse_character(server, c, guild)
-        yield "."
       end
         
       # Can't get guild faction from guild page; if Guild does not have faction set, 
@@ -80,13 +79,14 @@ class Parser
       sleep 5.0
       retry
     rescue InactiveCharacterError => e
+      # TODO: Set character.inactive to true before saving.
       char.save
       sleep 2.0
     end
   end
 
   def self.retrieve_guild_members(server, guild)
-    roster = Hpricot.XML(open(URI.escape(GUILD_ROSTER_URL % [server, guild]), REQUEST_HASH))
+    roster = Hpricot.XML(open(URI.escape(URL[:guild] % [server, guild]), REQUEST_HASH))
     begin
       memberlist = (roster % :page % :guildInfo % :guild % :members)
   
