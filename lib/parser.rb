@@ -9,9 +9,11 @@ class NoSuchGuildError < Exception; end
 class InactiveCharacterError < Exception; end
   
 class Parser
-  GUILD_ROSTER_URL = "http://www.wowarmory.com/guild-info.xml?brief=1&r=%s&n=%s"
-  CHARACTER_SHEET_URL = "http://www.wowarmory.com/character-sheet.xml?r=%s&n=%s"
-  CHARACTER_REP_URL = "http://www.wowarmory.com/character-reputation.xml?r=%s&n=%s"
+  BASE_URL = "http://www.wowarmory.com/"
+  URL = { :guild => "#{BASE_URL}guild-info.xml?brief=1&r=%s&n=%s",
+          :character => "#{BASE_URL}character-sheet.xml?r=%s&n=%s",
+          :reputation => "#{BASE_URL}character-reputation.xml?r=%s&n=%s",
+          :skills => "#{BASE_URL}character-skills.xml?r=%s&n=%s"
   REQUEST_HASH = { "user-agent" =>
                     "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4",
                    "connection" => "close"}
@@ -45,7 +47,7 @@ class Parser
         return if char.updated_at > 1.day.ago
       end
     
-      xml = Hpricot.XML(open(URI.escape(CHARACTER_SHEET_URL % [server_name, character_name]), REQUEST_HASH))
+      xml = Hpricot.XML(open(URI.escape(URL[:skills] % [server_name, character_name]), REQUEST_HASH))
 
       char.server, char.guild = retrieve_server_and_guild_ids(server_name, guild_name)
 
