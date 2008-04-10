@@ -1,0 +1,18 @@
+Weapon.find_or_create_by_name("Axes")
+Weapon.find_or_create_by_name("Bows")
+Weapon.find_or_create_by_name("Crossbows")
+Weapon.find_or_create_by_name("Daggers")
+Weapon.find_or_create_by_name("Defense")
+Weapon.find_or_create_by_name("Guns")
+Weapon.find_or_create_by_name("Maces")
+Weapon.find_or_create_by_name("Polearms")
+Weapon.find_or_create_by_name("Staves")
+Weapon.find_or_create_by_name("Swords")
+Weapon.find_or_create_by_name("Thrown")
+Weapon.find_or_create_by_name("Two-Handed Axes")
+Weapon.find_or_create_by_name("Two-Handed Maces")
+Weapon.find_or_create_by_name("Two-Handed Swords")
+Weapon.find_or_create_by_name("Unarmed")
+Weapon.find_or_create_by_name("Wands")
+
+puts "Weapon skills seeded."
