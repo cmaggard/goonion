@@ -8,8 +8,10 @@ class Character < ActiveRecord::Base
 
   has_many :skill_levels
   has_many :skills, :through => :skill_levels
-  has_many :professions, :class_name => "Profession", :source => :skill, :through => :skill_levels
-  has_many :secondaries, :class_name => "Secondary", :source => :skill, :through => :skill_levels
+  [Profession, Secondary, Weapon].each do |skill|
+    has_many skill.to_s.downcase.pluralize.to_sym, :class_name => skill.to_s, 
+            :source => :skill, :through => :skill_levels
+  end
   
   [Gender, Race, Klass, Faction].each do |c|
     c.find(:all).each do |g|
