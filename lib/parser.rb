@@ -22,19 +22,23 @@ class Parser
     begin
       characters = retrieve_guild_members(server, guild)
       Rails.logger.debug "Guild members retrieved.  Count: #{characters.length}"
-    
-      characters.each do |c|
-        parse_character(server, c, guild)
-      end
-        
-      # Can't get guild faction from guild page; if Guild does not have faction set, 
-      g = Server.find_by_name(server).guilds.find_by_name(guild)
-      if g.faction = nil
-        faction = g.characters.find(:first).faction
-        g.update_attribute(:faction, faction)
-      end
     rescue Exception => e
       raise e
+    end
+    
+    characters.each do |c|
+      begin
+        parse_character(server, c, guild)
+      rescue CharacterInactiveError => e
+        nil
+      end
+    end
+    
+    # Can't get guild faction from guild page; if Guild does not have faction set, 
+    g = Server.find_by_name(server).guilds.find_by_name(guild)
+    if g.faction = nil
+      faction = g.characters.find(:first).faction
+      g.update_attribute(:faction, faction)
     end
   end
   
@@ -79,9 +83,10 @@ class Parser
       sleep 5.0
       retry
     rescue InactiveCharacterError => e
-      # TODO: Set character.inactive to true before saving.
+      char.inactive = true
       char.save
       sleep 2.0
+      raise InactiveCharacterError
     end
   end
 
