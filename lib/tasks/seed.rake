@@ -1,8 +1,9 @@
 namespace :db do
   desc "Seeds lookup tables"
   task :seed => :environment do
-    ["klass","race","gender", "faction", "profession"].each do |f|
-      load File.join(RAILS_ROOT, 'db', 'fixtures', f + '.rb')
+    fixtures_dir = File.join(RAILS_ROOT, 'db', 'fixtures')
+    Dir.foreach(fixtures_dir) do |file|
+      load File.join(fixtures_dir, file) unless File.directory?(File.join(fixtures_dir, file))
     end
   end
 end
