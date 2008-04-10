@@ -32,6 +32,13 @@ class Character < ActiveRecord::Base
       lambda { |l| { :conditions => [["level",v].join(" ") + " ?", l] } })
   end
   
+  
+  # Returns true if character is played by an active account as determined
+  # by Armory parse.
+  def active?
+    !inactive
+  end
+  
   # skill_hash is :skill_name => level
   def add_skills(skill_hash)
     char_skill_levels = self.skill_levels
