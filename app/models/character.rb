@@ -24,6 +24,8 @@ class Character < ActiveRecord::Base
       lambda { |n| { :conditions => {c.to_s.downcase.pluralize + ".name" => n},
                      :include => c.to_s.downcase.to_sym } }
   end
+  
+  named_scope :named, lambda { |n| { :conditions => {"name" => n} } }
 
   { "" => "=", "min_" => ">=", "max_" => "<="}.each do |k, v|
     named_scope( (k+"level").to_sym,
