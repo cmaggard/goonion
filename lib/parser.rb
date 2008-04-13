@@ -67,11 +67,14 @@ class Parser
 
       ############################################################
       # Factor this into own method once parsing skills page
-      # professions = (characterInfo % :characterTab % professions)
-      # 
-      # (professions / :skill).each do |p|
-      # 
-      # end
+      skill_elems = xml.search("skill")
+      
+      skill_hash = skill_elems.inject({}) do |hash, elem| 
+        hash[elem[:name]] = elem[:value].to_i if SKILL_NAMES.include?(elem[:name])
+        hash
+      end
+      
+      char.add_skills(skill_hash)
       ############################################################
 
       char.save
