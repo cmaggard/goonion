@@ -6,7 +6,7 @@ require 'uri'
 
 class NoSuchGuildError < Exception; end
 
-class InactiveCharacterError < Exception; end
+class CharacterInactiveError < Exception; end
   
 class Parser
   BASE_URL = "http://www.wowarmory.com/"
@@ -17,6 +17,8 @@ class Parser
   REQUEST_HASH = { "user-agent" =>
                     "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:1.8.1.4) Gecko/20070515 Firefox/2.0.0.4",
                    "connection" => "close"}
+                   
+  SKILL_NAMES = Skill.find(:all, :select => :name).collect(&:name)
   
   def self.parse_guild(server = "Mal'Ganis", guild = "Goon Squad")!
     begin
