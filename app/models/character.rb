@@ -47,6 +47,8 @@ class Character < ActiveRecord::Base
     
     update_hash = Hash.new
     
+    # For each character skill_level, index the 
+    # skill_level object with the skill name
     char_skill_levels.each do |sk|
       update_hash[sk.skill.name] = sk
     end
@@ -57,7 +59,7 @@ class Character < ActiveRecord::Base
       rescue NoMethodError
         sk = Skill.find_by_name( name )
         sl = SkillLevel.new
-        sl.level = level
+        sl.level = value
         sl.skill = sk
         skill_levels << sl
       end
