@@ -12,6 +12,8 @@ class Character < ActiveRecord::Base
     has_many skill.to_s.downcase.pluralize.to_sym, :class_name => skill.to_s, 
             :source => :skill, :through => :skill_levels
   end
+  has_many :reputations
+  has_many :rep_factions, :through => :reputations
   
   [Gender, Race, Klass, Faction].each do |c|
     c.find(:all).each do |g|
