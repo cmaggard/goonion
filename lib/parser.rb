@@ -54,8 +54,6 @@ class Parser
     
       xml = Hpricot.XML(open(URI.escape(URL[:skills] % [server_name, character_name]), REQUEST_HASH))
 
-      char.server, char.guild = retrieve_server_and_guild_ids(server_name, guild_name)
-
       characterInfo = (xml % :page % :characterInfo)
       character = (characterInfo % :character)
       char.gender = Gender.find_by_name(character[:gender])
@@ -63,7 +61,9 @@ class Parser
       char.klass = Klass.find_by_name(character[:class])
       char.level = character[:level]
       char.faction = Faction.find_by_name(character[:faction])
-
+      
+      guild_name ||= (characterInfo % :guildName)
+      char.server, char.guild = retrieve_server_and_guild_ids(server_name, guild_name)
 
       ############################################################
       # Factor this into own method once parsing skills page
