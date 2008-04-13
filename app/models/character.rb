@@ -34,6 +34,13 @@ class Character < ActiveRecord::Base
       lambda { |l| { :conditions => [["level",v].join(" ") + " ?", l] } })
   end
   
+  Skill.find(:all).collect(&:name).each do |sk|
+    { "" => "=", "min_" => ">=", "max_" => "<="}.each do |k, v|
+      named_scope( (k+sk).downcase.gsub(/[-\s]/,"_").to_sym, 
+        lambda { |l| { :include => [:skills],
+                       :conditions => ["skills.name = ? AND skill_levels.level " + v  + " ?", sk, l ] } } )
+    end 
+  end
   
   # Returns true if character is played by an active account as determined
   # by Armory parse.
